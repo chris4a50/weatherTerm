@@ -6,7 +6,7 @@ from noaa_sdk import noaa
 n = noaa.NOAA()
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-z", "--zip", help="ZIP code to search for", default="", type=int)
+parser.add_argument("-z", "--zip", help="ZIP code to search for", default="20500", type=int)
 parser.add_argument("-c", "--country", help="Country code to use. Default is US.", default="US")
 
 args = parser.parse_args()
